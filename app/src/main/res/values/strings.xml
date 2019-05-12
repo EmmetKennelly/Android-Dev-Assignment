@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Assign3</string>
+
+
+    <string name="action_spelltimers" />
+
+
+    <string name="tv_champion_name_fragbuilds">Name</string>
+
+    <string name="tv_appstart_instructions_fragbuildscounters">To look up champion builds, abilities or counters, select a champion or use the search. \n To get the full list of champs run an empty search \n To get a list of ban rates, swipe to the right screen \n \n Click me to dismiss!</string>
+
+
+    <string name="tv_champion_primaryrole_actbuilds">Primary/</string>
+    <string name="tv_champion_secondaryrole_actbuilds">Secondary</string>
+    <string name="tv_abilities_order_wins_actbuilds">Most Wins: </string>
+    <string name="tv_abilities_order_frequent_actbuilds">Most Frequent: </string>
+    <string name="tv_items_wins_actbuilds">Most Wins:</string>
+    <string name="tv_items_frequent_actbuilds">Most Frequent:</string>
+    <string name="tv_abilities_order_actbuilds"><![CDATA[QWE]]></string>
+    <string name="tv_buildsandabilities_actbuilds">BUILDS / ABILITIES</string>
+
+    //Ban Rates Item List Fragment
+    <string name="tv_champion_name_fragbanrates">Name</string>
+    <string name="tv_champion_role_fragbanrates">Role</string>
+    <string name="tv_champion_banrate_fragbanrates">99%</string>
+    <string name="tv_champion_winrate_fragbanrates">99%</string>
+    <string name="tv_champion_playrate_fragbanrates">99%</string>
+    <string name="tv_champion_kda_fragbanrates">K/D/A</string>
+    <string name="tv_banrate_fragbanrates">ban rate</string>
+    <string name="tv_winrate_fragbanrates">win rate</string>
+    <string name="tv_playrate_fragbanrates">play rate</string>
+    <string name="tv_kda_fragbanrates">k.d.a:</string>
+
+    //Counters Activity
+    <string name="btn_champion_role_top_actcounters">Top</string>
+    <string name="btn_champion_role_jungle_actcounters">Jun</string>
+    <string name="btn_champion_role_mid_actcounters">Mid</string>
+    <string name="btn_champion_role_support_actcounters">Sup</string>
+    <string name="btn_champion_role_adc_actcounters">ADC</string>
+    <string name="tv_champion_name_actcounters">Name</string>
+
+
+    <string name="tv_strong_against_actcounters">Strong against:</string>
+    <string name="tv_weak_against_actcounters">Weak against:</string>
+    <string name="rb_strong_against_actcounters">Strong</string>
+    <string name="rb_weak_against_actcounters">Weak</string>
+    <string name="btn_view_champion_skins" />
+    <string name="btn_search_fragbuildscounters" />
+    <string name="et_search_fragbuildscounters" />
+
+
+    <string-array name="spinItem">
+        <item>BLADE OF THE RUINED KING</item>
+        <item>TRINITY FORCE</item>
+        <item>RAVENOUS HYDRA</item>
+        <item>LUDEN’S ECHO</item>
+        <item>LIANDRY’S TORMENT</item>
+        <item>INFINITY EDGE</item>
+        <item>STATIKK SHIV</item>
+        <item>RABADON’S DEATHCAP</item>
+    </string-array>
+
+
+    <string name="championgg_error_message">Error: champion.gg API down</string>
+    <string name="top">Top</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

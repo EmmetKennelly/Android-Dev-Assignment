@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/ScrollViewTipsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d5d5d5"
+                >
+
+                <ImageView
+                    android:id="@+id/img_championbig_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#64232323">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#e6232323">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignEnd="@+id/img_champion_actcounters"
+                        android:layout_alignRight="@+id/img_champion_actcounters"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="#232323"
+                        android:src="@drawable/jinx_0" />
+
+                    <ImageView
+                        android:id="@+id/img_champion_actcounters"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:adjustViewBounds="true"
+                        android:alpha="0"
+                        android:background="#232323" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="88dp"
+                    android:background="#e6232323"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_champion_name_actcounters"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-6dp"
+                        android:text="Jinx"
+                        android:textAllCaps="false"
+                        android:textColor="#FFB6C1"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_champion_title_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:lineSpacingExtra="-5dp"
+                        android:singleLine="false"
+android:text="The Loose Cannon"
+                        android:textColor="#b7b7b7"
+                        android:textIsSelectable="false"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_champion_primaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Marksman"
+                            android:textColor="#F0F8FF"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout2"
+                    android:layout_below="@+id/img_championbig_actcounters"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/RelativeLayout2"
+                    android:layout_toRightOf="@+id/RelativeLayout2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_champion_role_jungle_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_jungle_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Jungle"/>
+
+                    <Button
+                        android:id="@+id/btn_champion_role_adc_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_adc_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="ADC"/>
+
+                    <Button
+                        android:id="@+id/btn_champion_role_top_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_top_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Top"/>
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_strong_weak_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/LinearLayout2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_strong_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_strong_against_actcounters"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weak_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_weak_against_actcounters"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/btnSubmit"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView android:id="@+id/tvIngress5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Passive - Jinx receives massively increased Movement Speed and stacking Attack Speed whenever she damages an enemy champion, tower, or inhibitor that is then killed or destroyed within 3 seconds."
+                        android:layout_span="2"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+
+                    <TextView android:id="@+id/tvIngress"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Q - Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, and drain Mana."
+                        android:layout_span="2"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+                    <TextView android:id="@+id/tvIngres2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="W - Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, slowing and revealing it."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="E - Jinx throws out a line of snare grenades that explode after 5 seconds, lighting enemies on fire. Flame Chompers will bite enemy champions who walk over them, rooting them in place."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="R -  Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health.
+Jinx fires a rocket that gains damage over the first second it travels. It explodes on the first enemy champion hit, dealing 25/35/45 (+15% bonus Attack Damage) to 250/350/450 (+150% bonus Attack Damage) Physical Damage plus 25/30/35% of the target's missing Health. Nearby enemies take 80% Damage."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres6"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text=
+                            " Lore - 	A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx despises boredom, and gleefully brings her own chaotic brand of pandemonium wherever she goes.
+No one knows for sure exactly where Jinx came from, but many urban legends and folktales have sprung up around her. Some have her as a young gang member who fell in with the wrong crowd and was either traumatized by one too many killings, suffered too much at the hands of an enemy or was simply driven insane by sump fumes. A few of the old timers in Zaun remember a young girl who might fit Jinx’s description, but the girl they speak of is a far cry from the one who became Piltover’s bane. This girl was sweet and innocent, a tinkerer with big ideas, who never quite fit in and came to a bad end. Some even whisper that Jinx isn’t even human, that she is some kind of avenging spirit of mayhem, come to wreak havoc upon Piltover in revenge for the thousands who died when Zaun sank into the earth.
+
+Jinx made her first appearance on Roguery Night, a barely tolerated annual tradition where youthful girls and boys throughout Piltover play practical jokes on their family and neighbors. Jinx hijacked the occasion to unleash the first of many crime sprees; bridges were blocked with stampeding livestock freed from Count Mei’s menagerie, scores of roads were shut down by explosions that made them impassable, and every street sign in the city was moved and placed somewhere new. Jinx had succeeded in spreading chaos throughout the streets and bringing the city to a halt. It had been a good day."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+
+
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@string-array/spinItem"
+                    android:layout_below="@+id/rg_strong_weak_actcounters"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:hint="Favorite Item"
+                    android:textColorHint="@color/Gray">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Submit"
+                    android:background="@color/DarkGray"
+                    android:layout_below="@+id/spinner"
+                    android:layout_toRightOf="@+id/LinearLayout"
+                    android:layout_toEndOf="@+id/LinearLayout" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

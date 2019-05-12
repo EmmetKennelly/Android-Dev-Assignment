@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#232323">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bAhri"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Ahri"
+        android:textColor="#FFA500"
+        android:background="@drawable/ahri"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:onClick="Ahri"/>
+
+    <Button
+        android:id="@+id/bThresh"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/thresh"
+        android:text="Thresh"
+        android:textColor="#FFA500"
+        android:layout_alignBaseline="@+id/bAhri"
+        android:layout_alignBottom="@+id/bAhri"
+        android:layout_toRightOf="@+id/bAhri"
+        android:layout_toEndOf="@+id/bAhri"
+        android:onClick="Thresh"/>
+
+    <Button
+        android:id="@+id/bZed"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zed"
+        android:text="Zed"
+        android:textColor="#FFA500"
+
+        android:layout_alignBaseline="@+id/bThresh"
+        android:layout_alignBottom="@+id/bThresh"
+        android:layout_toRightOf="@+id/bThresh"
+        android:layout_toEndOf="@+id/bThresh"
+        android:onClick="Zed"/>
+
+    <Button
+        android:id="@+id/bPoppy"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/poppy"
+
+        android:textColor="#FFA500"
+        android:text="Poppy"
+        android:layout_below="@+id/bAhri"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Poppy"/>
+    <Button
+        android:id="@+id/bHecarim"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hecarim"
+        android:text="Hecarim"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/bThresh"
+        android:layout_toRightOf="@+id/bAhri"
+        android:onClick="Hecarim"
+        android:layout_toLeftOf="@+id/bZed"
+        android:layout_toStartOf="@+id/bZed" />
+
+    <Button
+        android:id="@+id/bNami"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nami"
+        android:text="Nami"
+        android:textColor="#FFA500"
+        android:layout_alignBaseline="@+id/bHecarim"
+        android:layout_alignBottom="@+id/bThresh"
+        android:layout_toRightOf="@+id/bThresh"
+        android:layout_toEndOf="@+id/bThresh"
+        android:onClick="Nami"/>
+    <Button
+        android:id="@+id/bCaitlyn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/caitlyn"
+        android:text="Caitlyn"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/bPoppy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Caitlyn"/>
+    <Button
+        android:id="@+id/bJhin"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jhin"
+        android:text="Jhin"
+        android:textColor="#FFA500"
+        android:layout_alignLeftOf ="@+id/bCaitlyn"
+        android:layout_alignBaseline="@+id/bCaitlyn"
+        android:layout_alignBottom="@+id/bCaitlyn"
+        android:onClick="Jhin"
+        android:layout_toLeftOf="@+id/bNami"
+        android:layout_toRightOf="@+id/bPoppy"
+        android:layout_toEndOf="@+id/bPoppy" />
+    <Button
+        android:id="@+id/bJinx"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jinx"
+        android:text="Jinx"
+        android:textColor="#FFA500"
+        android:layout_alignBaseline="@+id/bJhin"
+        android:layout_alignBottom="@+id/bThresh"
+        android:layout_toRightOf="@+id/bThresh"
+        android:layout_toEndOf="@+id/bThresh"
+        android:onClick="Jinx"/>
+    <TextView
+        android:id="@+id/itemmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bPoppy"
+        android:layout_alignEnd="@+id/bZed"
+        android:layout_alignRight="@+id/bZed"
+        android:layout_marginBottom="98dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:text="Press a button to select your character!"
+        android:textSize="18dip"
+        android:textStyle="bold"
+         android:textColor="#F8F8FF"/>
+
+
+</RelativeLayout>

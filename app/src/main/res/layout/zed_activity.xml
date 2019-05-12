@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/ScrollViewTipsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="net.championify.championify.CountersActivity"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d5d5d5"
+                tools:context="net.championify.championify.BuildsActivity">
+
+                <ImageView
+                    android:id="@+id/img_championbig_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#64232323">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#e6232323">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignEnd="@+id/img_champion_actcounters"
+                        android:layout_alignRight="@+id/img_champion_actcounters"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="#232323"
+                        android:src="@drawable/zed_0" />
+
+                    <ImageView
+                        android:id="@+id/img_champion_actcounters"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:adjustViewBounds="true"
+                        android:alpha="0"
+                        android:background="#232323" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="88dp"
+                    android:background="#e6232323"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_champion_name_actcounters"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-6dp"
+                        android:text="Zed"
+                        android:textAllCaps="false"
+                        android:textColor="#FF4500"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_champion_title_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:lineSpacingExtra="-5dp"
+                        android:singleLine="false"
+                        android:text="The Master of Shadows"
+                        android:textColor="#b7b7b7"
+                        android:textIsSelectable="false"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_champion_primaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Assassin/"
+                            android:textColor="#F0F8FF"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/tv_champion_secondaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Fighter"
+                            android:textColor="#b7b7b7"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout2"
+                    android:layout_below="@+id/img_championbig_actcounters"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/RelativeLayout2"
+                    android:layout_toRightOf="@+id/RelativeLayout2"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_champion_role_adc_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_top_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Top"/>
+
+                    <Button
+                        android:id="@+id/btn_champion_role_mid_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_mid_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Mid"/>
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_strong_weak_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/LinearLayout2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_strong_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_strong_against_actcounters"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weak_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_weak_against_actcounters"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btnSubmit"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvIngress5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="Passive -  Whenever Zed basic attacks an enemy below 50% health, he deals an additional 8% of their maximum health as magic damage. This effect cannot occur on a given target more than once every 10 seconds.
+"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvIngress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="Q -Zed and his shadow both throw their shurikens, each dealing physical damage to the first enemy they pass through and reduced damage thereafter."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvIngres2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="W - Zed's shadow dashes forward, remaining in place for 5 seconds.
+Reactivating this ability will cause Zed switch positions with his shadow.Zed's shadow will mimic his spellcasts."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt" />
+
+                    <TextView
+                        android:id="@+id/tvIngres3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="E - Zed and his shadow both create a burst of shadow, dealing physical damage to nearby enemies. Zed's Slash reduces the cooldown of Living Shadow by 2 seconds for each enemy Champion struck."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt" />
+
+                    <TextView
+                        android:id="@+id/tvIngres4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="R - Zed marks target champion for death. He becomes untargetable for 0.75 seconds and dashes to the target enemy champion, dealing physical damage equal to Zed's Attack Damage and spawning a Living Shadow at Zed's starting position, which mimics his spellcasts and can be teleported to by re-activating this ability."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt" />
+
+                    <TextView
+                        android:id="@+id/tvIngres6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="
+   Lore - Zed is the first ninja in 200 years to unlock the ancient, forbidden ways. He defied his clan and master, casting off the balance and discipline that had shackled him all his life. Zed now offers power to those who embrace knowledge of the shadows, and slays those who cling to ignorance.
+An orphan, Zed was taken in and trained by a great ninja master. Only one other student appeared to be Zed's equal - the master's son, Shen. It seemed Zed could never win the favor of the master, as every match between the rivals ended in a draw. Frustrated and jealous, he sought an advantage. The young ninja ventured into a sealed part of the clan's temple, where he found an ornate, foreboding box. Sensing the dark knowledge within, Zed knew he should not open it, but he peered inside nonetheless. In an instant, shadows touched his mind, revealing techniques that had long been hidden. Now armed with a secret edge, he challenged Shen, and this time he defeated the master's son. He expected praise and recognition in his moment of victory, but somehow the master knew Zed had used forbidden ways, and banished him.."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt" />
+
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/RelativeLayout2"
+                    android:layout_alignStart="@+id/RelativeLayout2"
+                    android:layout_below="@+id/rg_strong_weak_actcounters"
+                    android:entries="@string-array/spinItem"
+                    android:hint="Favorite Item"
+                    android:textColorHint="@color/Gray">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/rg_strong_weak_actcounters"
+                    android:layout_alignRight="@+id/rg_strong_weak_actcounters"
+                    android:layout_below="@+id/spinner"
+                    android:background="@color/DarkGray"
+                    android:text="Submit" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

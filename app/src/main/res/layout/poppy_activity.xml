@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/ScrollViewTipsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d5d5d5"
+         >
+
+                <ImageView
+                    android:id="@+id/img_championbig_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#64232323">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#e6232323">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignEnd="@+id/img_champion_actcounters"
+                        android:layout_alignRight="@+id/img_champion_actcounters"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="#232323"
+                        android:src="@drawable/poppy_0" />
+
+                    <ImageView
+                        android:id="@+id/img_champion_actcounters"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:adjustViewBounds="true"
+                        android:alpha="0"
+                        android:background="#232323" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="88dp"
+                    android:background="#e6232323"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_champion_name_actcounters"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-6dp"
+                        android:text="Poppy"
+                        android:textAllCaps="false"
+                        android:textColor="#6666cc"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_champion_title_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:lineSpacingExtra="-5dp"
+                        android:singleLine="false"
+android:text="Keeper of the Hammer"
+                        android:textColor="#b7b7b7"
+                        android:textIsSelectable="false"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_champion_primaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Warden/"
+                            android:textColor="#F0F8FF"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/tv_champion_secondaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Vanguard"
+                            android:textColor="#b7b7b7"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout2"
+                    android:layout_below="@+id/img_championbig_actcounters"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/RelativeLayout2"
+                    android:layout_toRightOf="@+id/RelativeLayout2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_champion_role_top_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_top_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Top"/>
+
+                    <Button
+                        android:id="@+id/btn_champion_role_support_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_support_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Sup"/>
+
+                    <Button
+                        android:id="@+id/btn_champion_role_jungle_actcounters_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_jungle_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Jungle"/>
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_strong_weak_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/LinearLayout2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_strong_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_strong_against_actcounters"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weak_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_weak_against_actcounters"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/btnSubmit"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView android:id="@+id/tvIngress5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Passive - Poppy periodically throws her buckler with her next basic attack, which then falls near her target, where it remains for up to 4 seconds. If the buckler kills its target, it bounces back to Poppy automatically. Enemies can step on the buckler to destroy it."
+                        android:layout_span="2"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+
+                    <TextView android:id="@+id/tvIngress"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Q - Poppy smashes the ground in front of her, dealing physical damage to all enemies hit. The impacted ground becomes unstable, slowing enemies standing on it before erupting after 1 second, dealing the same physical damage to all enemies hit."
+                        android:layout_span="2"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+                    <TextView android:id="@+id/tvIngres2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="W - Poppy gains bonus movement speed for 2.5 seconds and generates a barrier around her for the duration, causing all enemies who dash within to be knocked down and dealt magic damage."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="E - Poppy dashes to the target enemy, dealing them physical damage and carrying them along with her for up to 300 units. If they collide with terrain, she deals them the same physical damage again and stuns them."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="R - Poppy channels for up to 4 seconds, retaining the ability to move but slowing herself by 15% for the duration. Poppy smashes the ground, sending out a shockwave that travels in the target direction. When it hits an enemy champion, a massive hammer erupts, dealing physical damage to all enemies around it. Enemies impacted by the hammer are knocked back an incredible distance towards their fountain."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres6"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="
+   Lore -  Runeterra has no shortage of valiant champions, but few are as tenacious as Poppy. Bearing a hammer twice the length of her body, this determined yordle has spent untold years searching for the “Hero of Demacia” a fabled warrior said to be the rightful wielder of her weapon.
+As legend describes it, this hero is the only person who can unlock the full power of the hammer and lead Demacia to true greatness. Though Poppy has searched the furthest corners of the kingdom for this legendary fighter, her quest has proven fruitless. Each time she has attempted to pass the hammer on to a potential hero, the results have been disastrous, often ending in the warrior’s death. Most people would have abandoned the task long ago, but most people do not possess the pluck and resolve of this indomitable heroine."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+
+
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@string-array/spinItem"
+                    android:layout_below="@+id/rg_strong_weak_actcounters"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:hint="Favorite Item"
+                    android:textColorHint="@color/Gray">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Submit"
+                    android:background="@color/DarkGray"
+                    android:layout_below="@+id/spinner"
+                    android:layout_toRightOf="@+id/LinearLayout"
+                    android:layout_toEndOf="@+id/LinearLayout" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

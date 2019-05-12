@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/ScrollViewTipsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onSwipe="MoreInfo"
+        tools:context="net.championify.championify.CountersActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d5d5d5"
+            tools:context="net.championify.championify.BuildsActivity">
+
+            <ImageView
+                android:id="@+id/img_championbig_actcounters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/RelativeLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:alpha="0"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#64232323">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#e6232323">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="180dp"
+                    android:layout_alignEnd="@+id/img_champion_actcounters"
+                    android:layout_alignRight="@+id/img_champion_actcounters"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginTop="2.5dp"
+                    android:background="#232323"
+                    android:src="@drawable/ahri_0" />
+
+                <ImageView
+                    android:id="@+id/img_champion_actcounters"
+                    android:layout_width="100dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginTop="2.5dp"
+                    android:adjustViewBounds="true"
+                    android:alpha="0"
+                    android:background="#232323" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="88dp"
+                android:background="#e6232323"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:id="@+id/tv_champion_name_actcounters"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-6dp"
+                    android:text="Ahri"
+                    android:textAllCaps="false"
+                    android:textColor="#FF1493"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_champion_title_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:lineSpacingExtra="-5dp"
+                    android:singleLine="false"
+                    android:text="The Nine-Tailed Fox"
+                    android:textColor="#b7b7b7"
+                    android:textIsSelectable="false"
+                    android:textSize="14dp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_champion_primaryrole_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="Mage"
+                        android:textColor="#F0F8FF"
+                        android:textIsSelectable="false"
+                        android:textSize="10dp"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/RelativeLayout2"
+                android:layout_below="@+id/img_championbig_actcounters"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/RelativeLayout2"
+                android:layout_toRightOf="@+id/RelativeLayout2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_champion_role_support_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#232323"
+                    android:text="@string/btn_champion_role_support_actcounters"
+                    android:textColor="#006e9e"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/btn_champion_role_adc_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#232323"
+                    android:text="@string/btn_champion_role_adc_actcounters"
+                    android:textColor="#006e9e"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/btn_champion_role_mid_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#232323"
+                    android:text="@string/btn_champion_role_mid_actcounters"
+                    android:textColor="#006e9e"
+                    android:textSize="10dp" />
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"></LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_strong_weak_actcounters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/LinearLayout2"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_strong_against_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/rb_strong_against_actcounters"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_weak_against_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/rb_weak_against_actcounters"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout2"
+                android:layout_below="@+id/btnSubmit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/tvIngress5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:singleLine="false"
+                    android:text="Passive - Whenever Ahri hits an enemy with one of her abilities, she gains a charge of Essence Theft 2 Essence Theft, and can gain up to 3 charges per ability cast. Upon reaching 9 charges, her next ability heals her for 3 / 5 / 9 / 18 (+ 9% AP) for each enemy hit."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="5pt"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvIngress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:singleLine="false"
+                    android:text="Q - Ahri sends an orb of arcane energy in the target direction, dealing magic damage to all enemies it passes through, then pulls it back, dealing true damage to all enemies it passes through on the way to her current location."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="5pt"
+
+                    />
+
+                <TextView android:id="@+id/tvIngres2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="W - Ahri summons three spectral flames which orbit her for up to 5 seconds. After a brief delay, each flame pursues the closest visible enemy, prioritizing champions, then the target of Ahri's last basic attack, dealing magic damage."
+                    android:layout_span="1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="5pt"
+                    />
+                <TextView android:id="@+id/tvIngres3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="E - Ahri blows a kiss in a line, dealing magic damage to the first enemy hit and  charming them."
+                    android:layout_span="1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="5pt"
+                    />
+                <TextView android:id="@+id/tvIngres4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="R - Ahri dashes in the direction of the cursor and fires up to three energy bolts that each pursue one of her nearest visible enemies, dealing magic damage. Each enemy can only be hit by one bolt at a time."
+                    android:layout_span="1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="5pt"
+                    />
+                <TextView android:id="@+id/tvIngres6"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="
+   Lore -Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete. Deep inside, she felt the skin she had been born into was an ill fit for her and dreamt of one day becoming human. Her goal seemed forever out of reach, until she happened upon the wake of a human battle. It was a grisly scene, the land obscured by the forms of wounded and dying soldiers. She felt drawn to one: a robed man encircled by a waning field of magic whose life was quickly slipping away. She approached him and something deep inside of her triggered, reaching out to the man in a way she couldn't understand. His life essence poured into her, carried on invisible strands of magic. The sensation was intoxicating and overwhelming. As her reverie faded, she was delighted to discover that she had changed. Her sleek white fur had receded and her body was long and lithe - the shape of the humans who lay scattered about her.
+However, though she appeared human, she knew that in truth the transformation was incomplete. A cunning creature, she adapted herself to the customs of human society and used her profound gift of beauty to attract unsuspecting men. She could consume their life essences when they were under the spell of her seductive charms. Feeding on their desires brought her closer to her dream, but as she took more lives, a strange sense of regret began to well within her. She had reservations about actions which never troubled her as a fox. She realized that she could not overcome the pangs of her evolving morality. In search of a solution, Ahri found the Institute of War, home of the most gifted mages on Runeterra. They offered her a chance to attain her humanity without further harm through service in the League of Legends."
+                    android:layout_span="1"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="5pt"
+                    />
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@string-array/spinItem"
+                android:layout_below="@+id/rg_strong_weak_actcounters"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Favorite Item"
+                android:textColorHint="@color/Gray">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:text="Submit"
+                android:layout_below="@+id/spinner"
+                android:layout_alignLeft="@+id/rg_strong_weak_actcounters"
+                android:layout_alignStart="@+id/rg_strong_weak_actcounters"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/DarkGray"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+    </android.support.constraint.ConstraintLayout>

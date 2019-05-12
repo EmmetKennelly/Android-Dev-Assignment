@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/ScrollViewTipsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:context=".MoreActivity"   >
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d5d5d5"
+                tools:context="net.championify.championify.BuildsActivity">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#64232323">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#e6232323">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignEnd="@+id/img_champion_actcounters"
+                        android:layout_alignRight="@+id/img_champion_actcounters"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="#232323"
+                        android:src="@drawable/ahri_0" />
+
+                    <ImageView
+                        android:id="@+id/img_champion_actcounters"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:adjustViewBounds="true"
+                        android:alpha="0"
+                        android:background="#232323" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="88dp"
+                    android:background="#e6232323"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_champion_name_actcounters"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-6dp"
+                        android:text="Ahri"
+                        android:textAllCaps="false"
+                        android:textColor="#FF1493"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_champion_title_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:lineSpacingExtra="-5dp"
+                        android:singleLine="false"
+                        android:text="The Nine-Tailed Fox"
+                        android:textColor="#b7b7b7"
+                        android:textIsSelectable="false"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_champion_primaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Mage"
+                            android:textColor="#F0F8FF"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+         </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvIngress5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+
+                    android:singleLine="false"
+                    android:text=
+
+                        "Health:                                         Attack Damage:
+ 526 (+92 per level)                  53.04 (+3 per level)
+
+Attack Speed:                            Movement Speed:
+0.668 (+2% per level)                330
+
+Health Regen:                           Armor:
+6.508 (+0.6 per level)              20.88 (+3.5 per level)
+
+Magic Resist:
+30 (+0.5 per level)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="5pt"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/RelativeLayout2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>

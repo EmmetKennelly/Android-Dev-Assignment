@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/ScrollViewTipsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d5d5d5"
+         >
+
+                <ImageView
+                    android:id="@+id/img_championbig_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#64232323"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#e6232323">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignEnd="@+id/img_champion_actcounters"
+                        android:layout_alignRight="@+id/img_champion_actcounters"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="#232323"
+                        android:src="@drawable/hecarim_0" />
+
+                    <ImageView
+                        android:id="@+id/img_champion_actcounters"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:adjustViewBounds="true"
+                        android:alpha="0"
+                        android:background="#232323" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="88dp"
+                    android:background="#e6232323"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_champion_name_actcounters"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-6dp"
+                        android:text="Hecarim"
+                        android:textAllCaps="false"
+                        android:textColor="#cccc00"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_champion_title_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:lineSpacingExtra="-5dp"
+                        android:singleLine="false"
+android:text="The Shadow of War"
+                        android:textColor="#b7b7b7"
+                        android:textIsSelectable="false"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_champion_primaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Tank/"
+                            android:textColor="#F0F8FF"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/tv_champion_secondaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Fighter"
+                            android:textColor="#b7b7b7"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout2"
+                    android:layout_below="@+id/img_championbig_actcounters"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/RelativeLayout2"
+                    android:layout_toRightOf="@+id/RelativeLayout2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_champion_role_jungle_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_jungle_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Jungle"/>
+
+                    <Button
+                        android:id="@+id/btn_champion_role_top_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_top_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Top"/>
+
+
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_strong_weak_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/LinearLayout2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_strong_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_strong_against_actcounters"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weak_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_weak_against_actcounters"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/btnSubmit"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView android:id="@+id/tvIngress5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Passive - Hecarim gains 15% - 30% (based on level) of his bonus movement speed as bonus attack damage."
+                        android:layout_span="2"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+
+                    <TextView android:id="@+id/tvIngress"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Q -  Hecarim cleaves nearby enemies, dealing physical damage, reduced to 66.7% against minions."
+                        android:layout_span="2"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+                    <TextView android:id="@+id/tvIngres2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="W - Hecarim surrounds himself with the spirit of dread for 4 seconds, dealing magic damage per second to all enemies within its reach."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="E - Hecarim is temporarily ghosted and gains bonus movement speed for 4 seconds, beginning at 25% and increasing to 75% over 3 seconds.
+While Hecarim is charging, his next basic attack has 325 range, Airborne icon knocks back his target 250 / 450 units, and deals physical damage. The damage and knockback distance are increased based on how far Hecarim travelled during Devastating Charge's duration, ending its effects in the process."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="R - Hecarim summons spectral riders and dashes forth with them in a line, becoming immune to crowd control while charging and dealing magic damage to all enemies in their path. Enemies within range of where Hecarim stops also Fear icon flee from him for 0.75 / 1.5 seconds."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+                    <TextView android:id="@+id/tvIngres6"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="
+   Lore -		Hecarim is an armored colossus who charges from the Shadow Isles at the head of a deathly host of spectral horsemen to hunt the living. A monstrous fusion of man and beast, cursed to ride for eternity, Hecarim revels in slaughter and crushing souls beneath his armored hooves.
+Born into an empire long since gone to dust and forgotten, Hecarim was squired to a legendary company of knights known as the Iron Order, a brotherhood sworn to defend their king’s land. There he endured the harshest training imaginable, a punishing regime that schooled him to be a formidable warrior."
+                        android:layout_span="1"
+                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        />
+
+
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@string-array/spinItem"
+                    android:layout_below="@+id/rg_strong_weak_actcounters"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:hint="Favorite Item"
+                    android:textColorHint="@color/Gray">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Submit"
+                    android:background="@color/DarkGray"
+                    android:layout_below="@+id/spinner"
+                    android:layout_toRightOf="@+id/LinearLayout"
+                    android:layout_toEndOf="@+id/LinearLayout" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

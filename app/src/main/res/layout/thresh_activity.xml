@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/ScrollViewTipsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onSwipe="MoreInfo"
+            tools:context="net.championify.championify.CountersActivity"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d5d5d5"
+                tools:context="net.championify.championify.BuildsActivity">
+
+                <ImageView
+                    android:id="@+id/img_championbig_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#64232323">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#e6232323">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignEnd="@+id/img_champion_actcounters"
+                        android:layout_alignRight="@+id/img_champion_actcounters"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="#232323"
+                        android:src="@drawable/thresh_0" />
+
+                    <ImageView
+                        android:id="@+id/img_champion_actcounters"
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:adjustViewBounds="true"
+                        android:alpha="0"
+                        android:background="#232323" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="88dp"
+                    android:background="#e6232323"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_champion_name_actcounters"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-6dp"
+                        android:text="Thresh"
+                        android:textAllCaps="false"
+                        android:textColor="#66cc66"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_champion_title_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:lineSpacingExtra="-5dp"
+                        android:singleLine="false"
+                        android:text="The Chain Warden"
+                        android:textColor="#b7b7b7"
+                        android:textIsSelectable="false"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_champion_primaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Support/"
+                            android:textColor="#F0F8FF"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/tv_champion_secondaryrole_actcounters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Fighter"
+                            android:textColor="#b7b7b7"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/RelativeLayout2"
+                    android:layout_below="@+id/img_championbig_actcounters"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/RelativeLayout2"
+                    android:layout_toRightOf="@+id/RelativeLayout2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_champion_role_support_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_support_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Sup"/>
+
+                    <Button
+                        android:id="@+id/btn_champion_role_top_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#232323"
+                        android:text="@string/btn_champion_role_top_actcounters"
+                        android:textColor="#006e9e"
+                        android:textSize="10dp"
+                        android:onClick="Top"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_strong_weak_actcounters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/LinearLayout2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_strong_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_strong_against_actcounters"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weak_against_actcounters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/rb_weak_against_actcounters"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btnSubmit"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvIngress5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="Passive - Thresh's basic attacks do not use projectiles and his basic attack wind-up is only reduced by 0.25% per 1% bonus attack speed (compared to the standard 1% per 1%).
+INNATE: Enemies who die near Thresh drop souls for 8 seconds, which he can collect by either approaching them or by placing Dark Passage Dark Passage's lantern near them. Each collected soul permanently grants Thresh 0.75 bonus ability power, 0.75 bonus armor and increases Dark Passage Dark Passage's shield's strength and Flay Flay's minimum bonus magic damage by 1.."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvIngress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="Q - After a 0.5 seconds delay, Thresh throws out his scythe in the target direction and forms a tether with the first enemy hit, dealing magic damage and Stun icon stunning them for 1.5 seconds. Hitting an enemy reduces Death Sentence's cooldown by 3 seconds."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvIngres2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="W - Thresh throws his lantern to the target location, remaining for up to 6 seconds, Sight icon revealing its immediate surroundings and collecting nearby Damnation souls for the duration, shielding the first ally to come near it for up to 4 seconds, and automatically returning to Thresh if he moves more than 1500 units away from it."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt" />
+
+                    <TextView
+                        android:id="@+id/tvIngres3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="E - Thresh sweeps his chain in a broad line towards the target direction, dealing magic damage to enemies hit,  knocking them in the chain's direction, and slowing them afterwards for 1 second."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt" />
+
+                    <TextView
+                        android:id="@+id/tvIngres4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="R - After a 0.75 seconds delay, Thresh summons 5 spectral walls, each lasting for up to 5 seconds. Walls break upon contact with an enemy champion, dealing magic damage and slowing by 99% for 2 seconds."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt" />
+
+                    <TextView
+                        android:id="@+id/tvIngres6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:text="
+   Lore -	Sadistic and cunning, Thresh is a restless spirit who prides himself on tormenting mortals and breaking them with slow, excruciating inventiveness. His victims suffer far beyond the point of death, for Thresh wreaks agony upon their souls, imprisoning them in his lantern to torture for all eternity.
+In an age history has all but forgotten, the man who would later be known as Thresh was once a member of an order devoted to gathering and protecting knowledge. The masters of this order tasked him with guarding a hidden underground vault filled with dangerous and corrupted magical artifacts. Thresh was incredibly strong-willed and methodical, which made him well-suited to such work."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt" />
+
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/rg_strong_weak_actcounters"
+                    android:entries="@string-array/spinItem"
+                    android:hint="Favorite Item"
+                    android:textColorHint="@color/Gray">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner"
+                    android:layout_toEndOf="@+id/LinearLayout"
+                    android:layout_toRightOf="@+id/LinearLayout"
+                    android:layout_weight="1"
+                    android:background="@color/DarkGray"
+                    android:text="Submit" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
